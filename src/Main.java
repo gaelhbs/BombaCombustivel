@@ -105,7 +105,7 @@ public class Main {
                     double litros = new Scanner(System.in).nextDouble();
                     System.out.println("Digite o id da bomba:");
                     idBomba = new Scanner(System.in).nextLine();
-                    BombaCombustivel bombaSelecionada = null;
+                    BombaCombustivel bombaSelecionada = nulll;
 
             }
         }
