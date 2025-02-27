@@ -1,21 +1,17 @@
 public class BombaCombustivel {
 
-    private String idBomba;
+    private final String idBomba;
     private String tipoCombustivel;
     private double valorLitro;
     private double quantidadeCombustivel;
     private double valor;
 
     public BombaCombustivel(int idBomba, String tipoCombustivel, double valorLitro, double quantidadeCombustivel) {
-        this.idBomba = idBomba;
+        this.idBomba = String.valueOf(idBomba);
         this.tipoCombustivel = tipoCombustivel;
         this.valorLitro = valorLitro;
         this.quantidadeCombustivel = quantidadeCombustivel;
         this.valor = 0;
-    }
-
-    public double getValor() {
-        return valor;
     }
 
     public String getIdBomba() {
@@ -64,5 +60,7 @@ public class BombaCombustivel {
         this.quantidadeCombustivel -= litros;
         return valorLitro;
     }
+
+
 
 }
